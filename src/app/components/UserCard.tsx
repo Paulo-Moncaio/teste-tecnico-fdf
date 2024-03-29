@@ -1,16 +1,24 @@
-import { Button } from "@/components/ui/button";
-import { CardHeader, CardTitle, CardDescription, CardContent, Card } from "@/components/ui/card";
-import { UserIcon, CalendarIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { Button } from '@/components/ui/button'
+import {
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  Card,
+} from '@/components/ui/card'
+import { UserIcon, CalendarIcon, MailIcon, PhoneIcon } from 'lucide-react'
 
 export default function UserCard() {
-  return(
+  return (
     <Card>
       <CardHeader className="flex gap-4">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-full object-cover bg-gray-300" />
           <div className="flex flex-col">
             <CardTitle className="text-base font-medium">Alice Smith</CardTitle>
-            <CardDescription className="text-sm">alice.smith@example.com</CardDescription>
+            <CardDescription className="text-sm">
+              alice.smith@example.com
+            </CardDescription>
           </div>
         </div>
         <Button className="ml-auto" size="sm">

@@ -1,17 +1,17 @@
 'use client'
-import { Button } from "@/components/ui/button";
-import { UsersIcon, LogOutIcon, PackageIcon, LineChartIcon, MenuIcon } from "lucide-react";
-import Link from "next/link";
-import { SideBarContext } from "../context/sideBarContext";
-import { useContext } from "react";
+import { UsersIcon, PackageIcon, LineChartIcon } from 'lucide-react'
+import Link from 'next/link'
+import { SideBarContext } from '../context/sideBarContext'
+import { useContext } from 'react'
 
 export default function SideMenu() {
   const { isSideBarOpen } = useContext(SideBarContext)
 
-  return(
-    <div className={`fixed w-40 border-r h-full mt-14 bg-gray-100/40 dark:bg-gray-800/40 -left-40 transition-all ${isSideBarOpen && 'translate-x-40' }`}>
+  return (
+    <div
+      className={`fixed w-40 border-r h-full mt-14 bg-gray-100/40 dark:bg-gray-800/40 -left-40 transition-all ${isSideBarOpen && 'translate-x-40'}`}
+    >
       <div className="flex h-full max-h-screen flex-col gap-2">
-        
         <div className="flex-1 overflow-auto py-2">
           <nav className="grid items-start px-4 text-sm font-medium">
             <Link
