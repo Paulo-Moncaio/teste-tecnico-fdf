@@ -13,8 +13,8 @@ export default function Header() {
   }
 
   return (
-    <header className="flex fixed h-14 w-full justify-between items-center transition-all gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40 backdrop-blur-md">
-      <div className="flex h-14 items-center border-b gap-x-4 px-2">
+    <header className="flex fixed h-14 -mt-14 w-full justify-between items-center transition-all gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40 backdrop-blur-md">
+      <div className="flex h-14 items-center border-b gap-x-4">
         <Button
           onClick={handleToggleSidebar}
           className="h-8 w-8 transition-all"

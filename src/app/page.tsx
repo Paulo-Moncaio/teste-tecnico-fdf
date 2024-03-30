@@ -1,8 +1,24 @@
+import { Button } from '@/components/ui/button'
+import UserCard from './components/UserCard'
+
 export default function Home() {
   return (
-    <main className="p-4">
-      <h1>User</h1>
-      <div className="h-[1400px] bg-red-100 w-10 " />
+    <main className="p-4 px-2 sm:px-4">
+      <div className="flex items-center justify-between">
+        <h2>Usuários</h2>
+        <Button className="" color="" variant="default">
+          Adicionar
+        </Button>
+      </div>
+      <section className="mt-4">
+        <div className="bg-gray-200 p-4 rounded-t-md">
+          <h3>Seção</h3>
+        </div>
+        <div className="bg-gray-100 p-4 grid md:grid-cols-2 gap-4 rounded-b-md">
+          <UserCard />
+          <UserCard />
+        </div>
+      </section>
     </main>
   )
 }

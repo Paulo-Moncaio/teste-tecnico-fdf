@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased overflow-hidden',
+          'min-h-screen bg-background font-sans antialiased mt-14 no-scrollbar',
           fontSans.variable,
         )}
       >

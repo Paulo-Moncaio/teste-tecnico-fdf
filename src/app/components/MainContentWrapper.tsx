@@ -10,9 +10,7 @@ export default function MainContentWrapper({
   const { isSideBarOpen } = useContext(SideBarContext)
 
   return (
-    <div
-      className={`transition-all absolute overflow-scroll w-full h-full top-14 ${isSideBarOpen ? 'ml-40' : 'ml-0'}`}
-    >
+    <div className={`transition-all  ${isSideBarOpen ? 'sm:ml-40' : 'ml-0'}`}>
       {children}
     </div>
   )
