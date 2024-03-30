@@ -17,7 +17,7 @@ export default function Header() {
       <div className="flex h-14 items-center border-b gap-x-4">
         <Button
           onClick={handleToggleSidebar}
-          className="h-8 w-8 transition-all"
+          className="h-4 w-4 transition-all"
           size="icon"
           variant="ghost"
         >

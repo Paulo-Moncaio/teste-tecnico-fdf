@@ -58,7 +58,27 @@
   }
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 0px;
+@layer components {
+  .scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100%;
+    background: var(--background);
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e4e4e7;
+    width: 8px;
+    border-radius: 100vh;;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a1a1aa;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
