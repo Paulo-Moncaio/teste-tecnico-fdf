@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Metodologia
 
-## Getting Started
+Baseando-me no wireframe proposto, optei por desenvolver utilizando as seguintes tecnologias: React, Next.js, Tailwind CSS, TypeScript e Shadcn/ui. Essas tecnologias ofereceram uma excelente agilidade no desenvolvimento, pois a criação do projeto é extremamente simples com apenas um comando, resultando em uma configuração ampla já pronta para uso.
 
-First, run the development server:
+Shadcn/ui é uma biblioteca de componentes variados que facilitou o processo de desenvolvimento, especialmente com o uso do componente de modal. O sistema foi projetado seguindo o design system do Shadcn/ui, adotando assim padrões de design de interface consistentes e as medidas padrão do Tailwind CSS. Os componentes do Shadcn/ui podem ser encontrados dentro da pasta src/app/components/ui.
 
+Para as cores e demais tokens de design, optei por uma abordagem mais minimalista, visando um entendimento fácil e uma usabilidade intuitiva, com o uso de cores brancas, cinzas e azul para maior destaque.
+
+Procedi com o desenvolvimento seguindo as user stories em sua ordem e pensando na metodologia de mobile firts,  entregando uma interface que permite visualizar e criar usuários, além de um header e sidebar para facilitar a navegação. Adicionalmente, adotei a metodologia mobile-first no desenvolvimento.
+
+Espero que essas alterações atendam às suas expectativas! Se precisar de mais alguma coisa, estou à disposição.
+## Rodar localmente
+
+Primeiro, instale as depencencias:
+```bash
+npm install
+```
+Depois rode o projeto em ambiente de desenvolvimento com
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Acesse [http://localhost:3000](http://localhost:3000) para ver o resultado.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Para acessar o projeto em produção
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Acesse [https://teste-tecnico-fdf.vercel.app/](https://teste-tecnico-fdf.vercel.app/) para visualizar o projeto em prod.
